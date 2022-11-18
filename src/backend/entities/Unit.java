@@ -1,6 +1,7 @@
 package backend.entities;
 
 public class Unit {
+    public Integer id;
     public String faction;
     public String name;
     public Integer health;
@@ -8,6 +9,16 @@ public class Unit {
     public float doubleDamageChance;
     public float damageOrder;
     public String special;
+    public Integer count = 0;
+    public Integer expectedAttack = 0;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getFaction() {
         return faction;
@@ -63,5 +74,21 @@ public class Unit {
 
     public void setSpecial(String special) {
         this.special = special;
+    }
+
+    public Integer getCount() {
+        return count;
+    }
+
+    public void setCount(Integer count) {
+        this.count = count;
+    }
+
+    public Integer getExpectedAttack() {
+        return expectedAttack;
+    }
+
+    public void setExpectedAttack(Integer expectedAttack) {
+        this.expectedAttack = expectedAttack;
     }
 }

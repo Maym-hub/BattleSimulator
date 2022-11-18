@@ -11,10 +11,8 @@ public class Base extends JFrame{
         setName(name);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(300,300);
-        //JButton button = new JButton("Click me");
-        this.getContentPane().add(panel1); // Adds Button to content pane of frame
-        this.getContentPane().add(clickMeButton);
-        this.getContentPane().add(checkBox1);
+        this.getContentPane().add(panel1);
+
         this.setVisible(true);
     }
 }
