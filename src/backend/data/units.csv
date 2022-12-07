@@ -1,0 +1,22 @@
+1,Paragons,Militia,15,5,0.8,1,
+2,Paragons,Archer,10,20,0.8,6,Reach
+3,Paragons,Footsoldier,40,15,0.8,2,
+4,Paragons,Cavalry,5,5,0.8,5,Flanking; First Strike
+5,Paragons,Longbow Archer,10,15,0.8,7,Reach; Double Strike
+6,Paragons,Knight,90,20,0.8,3,
+7,Paragons,Crossbowman,15,90,0.8,8,Reach
+8,Paragons,Cuirassier,120,10,0.8,4,First Strike
+9,Paragons,Cannoneer,60,80,0.8,9,Reach; Trample; Flanking; Last Strike
+10,Orcs,Orcling,15,5,0.6,1,
+11,Orcs,Orc Hunter,10,20,0.6,6,Reach
+12,Orcs,Orc Raider,40,15,0.6,2,
+13,Orcs,Warg Rider,5,5,0.6,5,Flanking; First Strike
+14,Orcs,Elite Orc Hunter,10,15,0.6,7,Reach; Double Strike
+15,Orcs,Orc Veteran,90,20,0.6,3,
+16,Orcs,Elite Orc Sniper,15,90,0.6,8,Reach
+17,Orcs,Orc Vanguard,120,10,0.6,4,First Strike
+18,Orcs,Orc Demolisher,60,80,0.6,9,Reach; Trample; Flanking; Last Strike
+19,Orcs,Bula; the Bully,5000,150,0.5,10,
+20,Orcs,Aguk; the Destroyer,11000,300,0.5,11,
+21,Orcs,Mazoga; the Indestructible,120000,100,0.5,4.5
+22,Orcs,Durgash; the Devastator,40000,500,0.5,12,Trample; First Strike
