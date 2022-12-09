@@ -16,13 +16,25 @@ public class BattleData {
     public Integer orcLosses = 0;
     public Integer totalHpParagon = 0;
     public Integer totalHpOrc = 0;
+    public Team paragons;
+    public Team orcs;
 
     public BattleData() {
         this.units = new ArrayList<>();
         this.helper = new BattleDataHelper();
         importUnits();
+        paragons = new Team();
+        orcs = new Team();
+
         for (Unit unit : getUnits()) {
             unit.setExpectedAttack((int) ((1 + unit.doubleDamageChance) * unit.attack));
+            if (Objects.equals(unit.getFaction(), "Paragons")){
+                paragons.originalUnits.add(unit);
+                paragons.units.add(unit);
+            } else if (Objects.equals(unit.getFaction(), "Orcs")) {
+                orcs.originalUnits.add(unit);
+                orcs.units.add(unit);
+            }
         }
     }
 
@@ -98,6 +110,7 @@ public class BattleData {
     }
 
     public Integer generateTotalHpParagon() {
+        totalHpParagon = 0;
         for (Unit unit : units) {
             if (Objects.equals(unit.getFaction(), "Paragons")) {
                 totalHpParagon = totalHpParagon + unit.getSingleHealth() * unit.getCount();
@@ -111,6 +124,7 @@ public class BattleData {
     }
 
     public Integer generateTotalHpOrc() {
+        totalHpOrc = 0;
         for (Unit unit : units) {
             if (Objects.equals(unit.getFaction(), "Orcs")) {
                 totalHpOrc = totalHpOrc + unit.getSingleHealth() * unit.getCount();
@@ -137,5 +151,21 @@ public class BattleData {
             }
         }
         return paragon;
+    }
+
+    public void setTotalHpParagon(Integer totalHpParagon) {
+        this.totalHpParagon = totalHpParagon;
+    }
+
+    public void setTotalHpOrc(Integer totalHpOrc) {
+        this.totalHpOrc = totalHpOrc;
+    }
+
+    public Team getParagonTeam() {
+        return paragons;
+    }
+
+    public Team getOrcTeam() {
+        return orcs;
     }
 }

@@ -29,4 +29,8 @@ public class Special {
             }
         }
     }
+
+    public boolean isFlanking() {
+        return flanking;
+    }
 }

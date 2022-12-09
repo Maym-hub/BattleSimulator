@@ -1,5 +1,7 @@
 package backend.entities;
 
+import backend.entities.helper.Attack;
+
 import java.util.List;
 
 import static java.lang.Math.round;
@@ -19,6 +21,8 @@ public class Unit {
     public Integer expectedAttack = 0;
     public BattleData battleData = null;
 
+    public Integer currentHealth;
+
     public Unit(List<String> unitData) {
         this.id = Integer.valueOf(unitData.get(0));
         this.faction = unitData.get(1);
@@ -31,6 +35,7 @@ public class Unit {
         if (unitData.size()>6){
             this.setSpecial(new Special(unitData.get(6)));
         }
+        this.currentHealth = singleHealth * count;
     }
 
     public Integer getId() {
@@ -41,28 +46,12 @@ public class Unit {
         return faction;
     }
 
-    public String getName() {
-        return name;
-    }
-
     public Integer getSingleHealth() {
         return singleHealth;
     }
 
-    public Integer getAttack() {
-        return attack;
-    }
-
-    public float getDoubleDamageChance() {
-        return doubleDamageChance;
-    }
-
-    public float getDamageOrder() {
-        return damageOrder;
-    }
-
-    public Special getSpecial() {
-        return special;
+    public Attack getAttack() {
+        return new Attack(attack, doubleDamageChance, getCount(), special.flanking, special.trample);
     }
 
     public void setSpecial(Special special) {
@@ -71,14 +60,6 @@ public class Unit {
 
     public Integer getCount() {
         return count;
-    }
-
-    public void setCount(Integer count) {
-        this.count = count;
-    }
-
-    public Integer getExpectedAttack() {
-        return expectedAttack;
     }
 
     public void setExpectedAttack(Integer expectedAttack) {
@@ -101,5 +82,37 @@ public class Unit {
 
     public void recover() {
         this.singleHealth = this.maxCount * this.maxHealth;
+    }
+
+    public void damage(int damage) {
+        currentHealth -= damage;
+    }
+
+    public Integer getMaxHealth() {
+        return maxHealth;
+    }
+
+    public Integer getCurrentHealth() {
+        return currentHealth;
+    }
+
+    public boolean isDead() {
+        return currentHealth <= 0;
+    }
+
+    public int getRemainder() {
+        if (currentHealth == 0){
+            return 0;
+        }
+        else if (currentHealth % maxHealth == 0){
+            return maxHealth;
+        }
+        else {
+            return currentHealth % maxHealth;
+        }
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 }
