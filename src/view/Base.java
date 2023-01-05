@@ -10,7 +10,6 @@ public class Base extends JFrame{
     private JCheckBox checkBox1;
 
     private JPanel panel;
-    private JPanel icon;
 
     public Base(String name) {
         setName(name);
