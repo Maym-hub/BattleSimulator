@@ -15,7 +15,7 @@ public class ImagePanel extends JPanel {
     public ImagePanel() {
 
             try {
-                bi = ImageIO.read(new File("Your Image Path"));
+                bi = ImageIO.read(new File("src/backend/data/BattleSimulator_final_Icons/Orcs_Bula.png"));
             } catch (IOException ex) {
                 Logger.getLogger(ImagePanel.class.getName()).log(Level.SEVERE, null, ex);
             }
