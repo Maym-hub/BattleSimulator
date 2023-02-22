@@ -34,7 +34,7 @@
           <text value="CheckBox"/>
         </properties>
       </component>
-      <component id="4b5ce" class="javax.swing.JButton" binding="a1Button" default-binding="true">
+      <component id="4b5ce" class="javax.swing.JButton" binding="a1_Militia_Button">
         <constraints>
           <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -42,7 +42,7 @@
           <text value="+1"/>
         </properties>
       </component>
-      <component id="fa5fb" class="javax.swing.JButton" binding="a5Button" default-binding="true">
+      <component id="fa5fb" class="javax.swing.JButton" binding="a5_Militia_Button">
         <constraints>
           <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -50,7 +50,7 @@
           <text value="+5"/>
         </properties>
       </component>
-      <component id="e3e6d" class="javax.swing.JButton" default-binding="true">
+      <component id="e3e6d" class="javax.swing.JButton" binding="a1_Archer_Button">
         <constraints>
           <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -58,7 +58,7 @@
           <text value="+1"/>
         </properties>
       </component>
-      <component id="f81d6" class="javax.swing.JButton" default-binding="true">
+      <component id="f81d6" class="javax.swing.JButton" binding="a5_Archer_Button">
         <constraints>
           <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -74,7 +74,7 @@
           <text value="Label"/>
         </properties>
       </component>
-      <component id="106" class="javax.swing.JButton" binding="fillButton" default-binding="true">
+      <component id="106" class="javax.swing.JButton" binding="fill_Militia_Button">
         <constraints>
           <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -82,7 +82,7 @@
           <text value="Fill"/>
         </properties>
       </component>
-      <component id="36d6e" class="javax.swing.JButton" binding="allButton" default-binding="true">
+      <component id="36d6e" class="javax.swing.JButton" binding="all_Militia_Button">
         <constraints>
           <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -90,7 +90,7 @@
           <text value="All"/>
         </properties>
       </component>
-      <component id="439fe" class="javax.swing.JButton" default-binding="true">
+      <component id="439fe" class="javax.swing.JButton" binding="fill_Archer_Button">
         <constraints>
           <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -98,7 +98,7 @@
           <text value="Fill"/>
         </properties>
       </component>
-      <component id="1bb00" class="javax.swing.JButton" default-binding="true">
+      <component id="1bb00" class="javax.swing.JButton" binding="all_Archer_Button">
         <constraints>
           <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -106,21 +106,25 @@
           <text value="All"/>
         </properties>
       </component>
-      <component id="ccac1" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+      <component id="ccac1" class="javax.swing.JTextField" binding="Militia_textField">
         <constraints>
           <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="141" height="30"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="0"/>
+        </properties>
       </component>
-      <component id="1e8e8" class="javax.swing.JTextField" default-binding="true">
+      <component id="1e8e8" class="javax.swing.JTextField" binding="Archer_textField">
         <constraints>
           <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="141" height="30"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="0"/>
+        </properties>
       </component>
       <component id="d86f5" class="javax.swing.JCheckBox" binding="checkBox2" default-binding="true">
         <constraints>
@@ -148,7 +152,7 @@
           <text value="Enemie Troups"/>
         </properties>
       </component>
-      <component id="f497e" class="javax.swing.JButton" binding="clearButton" default-binding="true">
+      <component id="f497e" class="javax.swing.JButton" binding="clearEnemyTroupsButton">
         <constraints>
           <grid row="2" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -356,63 +360,77 @@
           <text value="Label"/>
         </properties>
       </component>
-      <component id="6019" class="javax.swing.JTextField" default-binding="true">
+      <component id="6019" class="javax.swing.JTextField" binding="Footsoldier_textField">
         <constraints>
           <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="141" height="30"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="0"/>
+        </properties>
       </component>
-      <component id="6adc7" class="javax.swing.JTextField" default-binding="true">
+      <component id="6adc7" class="javax.swing.JTextField" binding="LongBowArcher_textField">
         <constraints>
           <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="141" height="30"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="0"/>
+        </properties>
       </component>
-      <component id="b855b" class="javax.swing.JTextField" default-binding="true">
+      <component id="b855b" class="javax.swing.JTextField" binding="Knight_textField">
         <constraints>
           <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="141" height="30"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="0"/>
+        </properties>
       </component>
-      <component id="7c1d5" class="javax.swing.JTextField" default-binding="true">
+      <component id="7c1d5" class="javax.swing.JTextField" binding="Crossbowman_textField">
         <constraints>
           <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="141" height="30"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="0"/>
+        </properties>
       </component>
-      <component id="e3fab" class="javax.swing.JTextField" default-binding="true">
+      <component id="e3fab" class="javax.swing.JTextField" binding="Cavalry_textField">
         <constraints>
           <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="141" height="30"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="0"/>
+        </properties>
       </component>
-      <component id="2218a" class="javax.swing.JTextField" default-binding="true">
+      <component id="2218a" class="javax.swing.JTextField" binding="Cuirassier_textField">
         <constraints>
           <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="141" height="30"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="0"/>
+        </properties>
       </component>
-      <component id="1f0ec" class="javax.swing.JTextField" default-binding="true">
+      <component id="1f0ec" class="javax.swing.JTextField" binding="Cannoneer_textField">
         <constraints>
           <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="141" height="30"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="0"/>
+        </properties>
       </component>
-      <component id="c65b7" class="javax.swing.JButton" default-binding="true">
+      <component id="c65b7" class="javax.swing.JButton" binding="a1_Footsoldier_Button">
         <constraints>
           <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -420,7 +438,7 @@
           <text value="+1"/>
         </properties>
       </component>
-      <component id="fb8c2" class="javax.swing.JButton" default-binding="true">
+      <component id="fb8c2" class="javax.swing.JButton" binding="a5_Footsoldier_Button">
         <constraints>
           <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -428,7 +446,7 @@
           <text value="+5"/>
         </properties>
       </component>
-      <component id="cd9d6" class="javax.swing.JButton" default-binding="true">
+      <component id="cd9d6" class="javax.swing.JButton" binding="a1_LongBowArcher_Button">
         <constraints>
           <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -436,7 +454,7 @@
           <text value="+1"/>
         </properties>
       </component>
-      <component id="fffa3" class="javax.swing.JButton" default-binding="true">
+      <component id="fffa3" class="javax.swing.JButton" binding="a5_LongBowArcher_Button">
         <constraints>
           <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -444,7 +462,7 @@
           <text value="+5"/>
         </properties>
       </component>
-      <component id="d09b7" class="javax.swing.JButton" default-binding="true">
+      <component id="d09b7" class="javax.swing.JButton" binding="a1_Knight_Button">
         <constraints>
           <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -452,7 +470,7 @@
           <text value="+1"/>
         </properties>
       </component>
-      <component id="93d94" class="javax.swing.JButton" default-binding="true">
+      <component id="93d94" class="javax.swing.JButton" binding="a5_Knight_Button">
         <constraints>
           <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -460,7 +478,7 @@
           <text value="+5"/>
         </properties>
       </component>
-      <component id="a9f45" class="javax.swing.JButton" default-binding="true">
+      <component id="a9f45" class="javax.swing.JButton" binding="a1_Crossbowman_Button">
         <constraints>
           <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -468,7 +486,7 @@
           <text value="+1"/>
         </properties>
       </component>
-      <component id="6970f" class="javax.swing.JButton" default-binding="true">
+      <component id="6970f" class="javax.swing.JButton" binding="a5_Crossbowman_Button">
         <constraints>
           <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -476,7 +494,7 @@
           <text value="+5"/>
         </properties>
       </component>
-      <component id="c1c69" class="javax.swing.JButton" default-binding="true">
+      <component id="c1c69" class="javax.swing.JButton" binding="a1_Cavalry_Button">
         <constraints>
           <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -484,7 +502,7 @@
           <text value="+1"/>
         </properties>
       </component>
-      <component id="7c16b" class="javax.swing.JButton" default-binding="true">
+      <component id="7c16b" class="javax.swing.JButton" binding="a5_Cavalry_Button">
         <constraints>
           <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -492,7 +510,7 @@
           <text value="+5"/>
         </properties>
       </component>
-      <component id="463ff" class="javax.swing.JButton" default-binding="true">
+      <component id="463ff" class="javax.swing.JButton" binding="a1_Cuirassier_Button">
         <constraints>
           <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -500,7 +518,7 @@
           <text value="+1"/>
         </properties>
       </component>
-      <component id="634b2" class="javax.swing.JButton" default-binding="true">
+      <component id="634b2" class="javax.swing.JButton" binding="a5_Cuirassier_Button">
         <constraints>
           <grid row="9" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -508,7 +526,7 @@
           <text value="+5"/>
         </properties>
       </component>
-      <component id="468f2" class="javax.swing.JButton" default-binding="true">
+      <component id="468f2" class="javax.swing.JButton" binding="a1_Cannoneer_Button">
         <constraints>
           <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -516,7 +534,7 @@
           <text value="+1"/>
         </properties>
       </component>
-      <component id="90ab4" class="javax.swing.JButton" default-binding="true">
+      <component id="90ab4" class="javax.swing.JButton" binding="a5_Cannoneer_Button">
         <constraints>
           <grid row="10" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -524,7 +542,7 @@
           <text value="+5"/>
         </properties>
       </component>
-      <component id="e20a7" class="javax.swing.JButton" default-binding="true">
+      <component id="e20a7" class="javax.swing.JButton" binding="fill_Footsoldier_Button">
         <constraints>
           <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -532,7 +550,7 @@
           <text value="Fill"/>
         </properties>
       </component>
-      <component id="a5ebd" class="javax.swing.JButton" default-binding="true">
+      <component id="a5ebd" class="javax.swing.JButton" binding="all_Footsoldier_Button">
         <constraints>
           <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -540,7 +558,7 @@
           <text value="All"/>
         </properties>
       </component>
-      <component id="daca" class="javax.swing.JButton" default-binding="true">
+      <component id="daca" class="javax.swing.JButton" binding="fill_LongBowArcher_Button">
         <constraints>
           <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -548,7 +566,7 @@
           <text value="Fill"/>
         </properties>
       </component>
-      <component id="83dcc" class="javax.swing.JButton" default-binding="true">
+      <component id="83dcc" class="javax.swing.JButton" binding="all_LongBowArcher_Button">
         <constraints>
           <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -556,7 +574,7 @@
           <text value="All"/>
         </properties>
       </component>
-      <component id="77797" class="javax.swing.JButton" default-binding="true">
+      <component id="77797" class="javax.swing.JButton" binding="fill_Knight_Button">
         <constraints>
           <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -564,7 +582,7 @@
           <text value="Fill"/>
         </properties>
       </component>
-      <component id="ce11a" class="javax.swing.JButton" default-binding="true">
+      <component id="ce11a" class="javax.swing.JButton" binding="all_Knight_Button">
         <constraints>
           <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -572,7 +590,7 @@
           <text value="All"/>
         </properties>
       </component>
-      <component id="da05a" class="javax.swing.JButton" default-binding="true">
+      <component id="da05a" class="javax.swing.JButton" binding="fill_Crossbowman_Button">
         <constraints>
           <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -580,7 +598,7 @@
           <text value="Fill"/>
         </properties>
       </component>
-      <component id="fb4cc" class="javax.swing.JButton" default-binding="true">
+      <component id="fb4cc" class="javax.swing.JButton" binding="all_Crossbowman_Button">
         <constraints>
           <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -588,7 +606,7 @@
           <text value="All"/>
         </properties>
       </component>
-      <component id="a543" class="javax.swing.JButton" default-binding="true">
+      <component id="a543" class="javax.swing.JButton" binding="fill_Cavalry_Button">
         <constraints>
           <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -596,7 +614,7 @@
           <text value="Fill"/>
         </properties>
       </component>
-      <component id="8f905" class="javax.swing.JButton" default-binding="true">
+      <component id="8f905" class="javax.swing.JButton" binding="all_Cavalry_Button">
         <constraints>
           <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -604,7 +622,7 @@
           <text value="All"/>
         </properties>
       </component>
-      <component id="79554" class="javax.swing.JButton" default-binding="true">
+      <component id="79554" class="javax.swing.JButton" binding="fill_Cuirassier_Button">
         <constraints>
           <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -612,7 +630,7 @@
           <text value="Fill"/>
         </properties>
       </component>
-      <component id="3acf5" class="javax.swing.JButton" default-binding="true">
+      <component id="3acf5" class="javax.swing.JButton" binding="all_Cuirassier_Button">
         <constraints>
           <grid row="9" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -620,7 +638,7 @@
           <text value="All"/>
         </properties>
       </component>
-      <component id="84f2f" class="javax.swing.JButton" default-binding="true">
+      <component id="84f2f" class="javax.swing.JButton" binding="fill_Cannoneer_Button">
         <constraints>
           <grid row="10" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -628,7 +646,7 @@
           <text value="Fill"/>
         </properties>
       </component>
-      <component id="a1cad" class="javax.swing.JButton" default-binding="true">
+      <component id="a1cad" class="javax.swing.JButton" binding="all_Cannoneer_Button">
         <constraints>
           <grid row="10" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -684,7 +702,7 @@
         </constraints>
         <properties/>
       </component>
-      <component id="87a78" class="javax.swing.JButton" default-binding="true">
+      <component id="87a78" class="javax.swing.JButton" binding="clearOurTroupsButton1">
         <constraints>
           <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
