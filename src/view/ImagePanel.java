@@ -15,7 +15,7 @@ public class ImagePanel extends JPanel {
     public ImagePanel() {
 
         try {
-            bi = ImageIO.read(new File("src/Icons/Orcs_Bula.png"));
+            bi = ImageIO.read(new File("src/Icons/Orcs_Aguk.png"));
         } catch (IOException ex) {
             Logger.getLogger(ImagePanel.class.getName()).log(Level.SEVERE, null, ex);
         }
