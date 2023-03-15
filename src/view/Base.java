@@ -1,5 +1,7 @@
 package view;
 
+import backend.entities.BattleData;
+
 import javax.swing.*;
 import javax.swing.text.*;
 import java.awt.*;
@@ -84,7 +86,7 @@ public class Base extends JFrame{
     private JTextField OrcDemolisher_textField;
 
 
-    public Base(String name, Battle) {
+    public Base(String name, BattleData battleData) {
         setName(name);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(1500,900);
@@ -111,13 +113,13 @@ public class Base extends JFrame{
         this.setVisible(true);
 
         /** Klasse "ImagePanel" aus Icons Branch wurde eingefügt um Bilder korrekt abzubilden**/
-        ImagePanel imagePanel = new ImagePanel();
-        this.getContentPane().add(imagePanel, BorderLayout.WEST);
+        //ImagePanel imagePanel = new ImagePanel();
+        //this.getContentPane().add(imagePanel, BorderLayout.WEST);
 
         /**** Test das "Label" durch Bilder zu ersetzen ****/
 
         panel_orc1.remove(label_orc1);
-        panel_orc1.add(imagePanel);
+        //panel_orc1.add(imagePanel);
         panel_orc1.validate();
         panel_orc1.repaint();
 

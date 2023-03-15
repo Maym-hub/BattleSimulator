@@ -12,7 +12,7 @@ public class Interface {
         battleData = new BattleData();
         Calculator calculator = new Calculator();
 
-        JFrame frame = new Base("Battle Simulator");
+        JFrame frame = new Base("Battle Simulator", battleData);
 
         battleData = calculator.calculate(battleData);
     }
