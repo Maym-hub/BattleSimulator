@@ -18,8 +18,8 @@ public class Base extends JFrame{
     private JButton fill_Militia_Button;
     private JButton all_Militia_Button;
     private JButton clearEnemyTroupsButton;
-    private JCheckBox boss1CheckBox;
-    private JCheckBox boss2CheckBox;
+    private JCheckBox bulaBoss1CheckBox;
+    private JCheckBox agukBoss2CheckBox;
     private JTable table1;
     private JLabel label_orc1;
     private JLabel orc2;
@@ -84,10 +84,10 @@ public class Base extends JFrame{
     private JTextField OrcDemolisher_textField;
 
 
-    public Base(String name) {
+    public Base(String name, Battle) {
         setName(name);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(1500,600);
+        this.setSize(1500,900);
         //JButton button = new JButton("Click me");
 
         //JPanel panel = new JPanel();
@@ -99,7 +99,7 @@ public class Base extends JFrame{
         panel_orc1.add(label);
 
 
-        label.setPreferredSize(new Dimension(150,150));
+        label.setPreferredSize(new Dimension(100,110));
 
         /*** Wird MyFrame benötigt? ****/
         //MyFrame frame = new MyFrame();
@@ -107,7 +107,7 @@ public class Base extends JFrame{
 
         /**** (Test) BorderLayout um Tabelle & Bilder sehen zu ***/
         this.getContentPane().add(panel1, BorderLayout.EAST); // Adds Button to content pane of frame
-        this.getContentPane().add(panel_orc1/*, BorderLayout.WEST*/);
+        this.getContentPane().add(panel_orc1, BorderLayout.SOUTH);
         this.setVisible(true);
 
         /** Klasse "ImagePanel" aus Icons Branch wurde eingefügt um Bilder korrekt abzubilden**/
